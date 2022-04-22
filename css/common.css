@@ -32,9 +32,9 @@
                  color:#fff }
                  #nav1 ul { width: 1500px;  height: 100%; margin : 0 auto;}
         #nav1 ul > li { float: right; }
-        #nav1 ul  li  a { color: #fff; }
         #nav1 .nav_email { float: right; padding: 0 50px 0px 0px; }
         #nav1 .nav_icon { padding: 0 0 0 10px;  }
+        #nav1 ul li a { color:#333; }
         /* #nav1 ul .nav_icon:nth-child(1) a:hover { background-color: rgba(0, 0, 0, 0.829 ); } */
 
 
@@ -42,6 +42,7 @@
         #nav2 {width: 590px; height: 50px; border-bottom: 2px solid #333; 
                float: left; margin: 105px 0 0 0px; padding : 0px 0 0 80px; }
         #nav2 #menu { font-weight: bold; font-family: Wemakeprice-Regular; display:inline;}
+        #nav2 ul li a { color:#333; }
         #nav2 #menu > li { float: left; padding : 10px 60px 0 20px; }
         #nav2 ul a:hover { background: rgb(224,255,255); }
         #nav2 #menu a:hover >.kategory {display:block;}
@@ -60,7 +61,6 @@
         #nav2 #menu li .kategory2 li a { display: block; }
         #nav2 #menu li:hover .kategory2 { display:block; }
         #nav2 #menu .kategory2 a { display: inline-block;  padding: 15px; font-size: 15px; }
-        #nav2 ul  li  a { color: #333; }
 
         
         #logo {width : 315px; height : 205px; float: left; 
@@ -68,9 +68,9 @@
         #nav3 {width: 590px; height: 50px; border-bottom: 2px solid #333; 
                float : right; margin: 105px 0 0 0px; padding: 0px 0 0 65px; }
         #nav3 ul { font-weight : bold; font-family: Wemakeprice-Regular; display:inline;  }
-        #nav3 ul  li  a { color: #333; }
         #nav3 #menu3 > li { float: left; padding : 10px 50px 0 50px; }
         #nav3 ul a:hover { background: rgb(224,255,255); }
+        #nav3 ul li a { color:#333; }
         #nav3 #menu3 a:hover >.kategory3 { display: block; }
         #nav3 #menu3 li .kategory3 { position: absolute; width: 60px; display:none; z-index: 5;}
         #nav3 #menu3 li .kategory3 li { background: rgb(230, 230, 250); display:block; 
@@ -84,7 +84,7 @@
         footer #logo2 { width: 200px; height: 200px; float: left;
                         margin: 0 0 0 100px; }
         footer div { font-family: 'YeolrinGothic-Light'; }
-        footer .copyright { clear: both; text-align: center;  }
+        footer .copyright { clear: both; text-align: center; padding-bottom :30px;  }
         
         footer .email_and_phone { width : 520px; margin: 30px 100px 0 0px; float: right; }
         footer #nav4 { width: 40%; height: 50px;  margin: 0px 100px 0 0px; float: right;   }
