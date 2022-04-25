@@ -10,6 +10,24 @@
         
 
     <style>
+        @font-face {
+        font-family: 'InfinitySans-BoldA1';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+                            }
+        @font-face {
+        font-family: 'Hahmlet-Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+                            }
+        @font-face {
+        font-family: 'paybooc-Medium';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+                            }
 
         #slider2 a:visited { color:#333; }
 
@@ -19,17 +37,18 @@
         #slider #product { width: 650px; position: absolute;
                            position: absolute; }
         #slider .table1 { width: 725px; height: 200px; border-bottom: 1px solid lightgray;
-                position: absolute; top: 50px; right: 50px; border-top: 2px solid #333;  }
+                position: absolute; top: 50px; right: 50px; border-top: 2px solid #333; font-family: 'Hahmlet-Regular';  }
         .table1 td { padding: 0px 5px; }
         #slider .best_bread { background: coral; color:#fff;
                               padding: 0 10px 0 10px; border-radius: 10px; }
 
 
        #slider .table2 { width: 725px; height: 50px; border-bottom: 1px solid lightgray;
-                         position: absolute; top: 250px; right: 50px; background: rgb(200, 200, 200); }
+                         position: absolute; top: 250px; right: 50px; background: rgb(200, 200, 200);
+                         font-family: 'Hahmlet-Regular'; }
         
         #slider .table3 { width: 725px; height: 50px; border-bottom: 1px solid lightgray;
-                          position: absolute; top: 300px; right: 50px; }
+                          position: absolute; top: 300px; right: 50px; font-family: 'Hahmlet-Regular'; }
         #slider .plus_button { width: 15px; height: 15px; position: absolute; top: 260px; right: 475px; }
         #slider .plus_button .plus { cursor: pointer; }
         #slider .minus_button .minus { cursor: pointer; }
@@ -69,17 +88,19 @@
         #slider2 #slider_anchor1 { width: 100%; height: 35px; border-bottom: 1px solid #555;
                                    text-align: center; }
         #slider_anchor1 .product_detail1 { position: relative; }
-        #slider_anchor1 .product_detail1 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; }
+        #slider_anchor1 .product_detail1 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
+                                              }
 
         #slider_anchor1 .product_detail1 .click_on1 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
                                                       font-size: 15px; }
         
-        #slider_anchor1 .product_detail1 .click_on1 > a { color:#444; }
+        #slider_anchor1 .product_detail1 .click_on1 > a { color:#444; font-size: 12px; }
         
         #slider_anchor1 .product_detail1 > .click_none1 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
-                                                              font-size: 15px; }
+                                                              font-size: 15px; font-size: 12px; }
+        #slider_anchor1 .product_detail1 > .click_none1 > a:hover { background: rgb( 213, 213, 213 ); }  
 
         
 
@@ -142,7 +163,7 @@
            
                 <tr>
                     <td><span class="best_bread">Best Bread</span></td>
-                    <td style="width: 300px; font-weight: 600; font-size: 25px;"> 뉴욕식 소세지빵 4개입(정기배송)</td>
+                    <td style="width: 300px; font-weight: 600; font-size: 25px; font-family: InfinitySans-BoldA1;"> 뉴욕식 소세지빵 4개입(정기배송)</td>
                 </tr>
 
                 <tr>
