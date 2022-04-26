@@ -33,7 +33,7 @@
 
         #slider { width: 1500px; height: 470px; margin: 0 auto;
                     position: relative;}
-        #slider img { float: left; margin: 50px 0 0px 50px; }
+        #slider #product > img { float: left; margin: 50px 0 0px 50px; }
         #slider #product { width: 650px; position: absolute;
                            position: absolute; }
         #slider .table1 { width: 725px; height: 200px; border-bottom: 1px solid lightgray;
@@ -49,10 +49,14 @@
         
         #slider .table3 { width: 725px; height: 50px; border-bottom: 1px solid lightgray;
                           position: absolute; top: 300px; right: 50px; font-family: 'Hahmlet-Regular'; }
-        #slider .plus_button { width: 15px; height: 15px; position: absolute; top: 260px; right: 475px; }
+        #slider .table3 td:nth-of-type(2) { position:relative; }
+        #slider .table3 td:nth-of-type(2) img { position: absolute; top:0; left:0; }
+        #slider .table3 td:nth-of-type(2) img:nth-of-type(1) { top:20px; left: 40px; }
+        #slider .table3 td:nth-of-type(2) img:nth-of-type(2) { top:20px; left: -15px; }
+                          /* #slider .plus_button { width: 15px; height: 15px; position: absolute; top: 260px; right: 475px; }
         #slider .plus_button .plus { cursor: pointer; }
         #slider .minus_button .minus { cursor: pointer; }
-        #slider .minus_button { width: 15px; height: 15px; position: absolute; top: 275px; right: 475px; }                  
+        #slider .minus_button { width: 15px; height: 15px; position: absolute; top: 275px; right: 475px; }                   */
 
         #slider .buttons { width: 725px; height: 65px; border-bottom: 1px solid lightgray;
                           position: absolute; top: 350px; right: 50px; }
@@ -93,13 +97,13 @@
 
         #slider_anchor1 .product_detail1 .click_on1 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
-                                                      font-size: 15px; }
+                                                      font-size: 15px; padding-top: 8px; }
         
         #slider_anchor1 .product_detail1 .click_on1 > a { color:#444; font-size: 12px; }
         
         #slider_anchor1 .product_detail1 > .click_none1 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
-                                                              font-size: 15px; font-size: 12px; }
+                                                              font-size: 15px; font-size: 12px; padding-top: 8px; }
         #slider_anchor1 .product_detail1 > .click_none1 > a:hover { background: rgb( 213, 213, 213 ); }  
 
         
@@ -112,75 +116,186 @@
 
         button { margin: 3px; cursor: pointer; }
 
-        
-        
-
-        /* #slider .slider_line1 { float: right; width: 610px; height: 25px; 
-                               border-bottom: 2px solid #333; margin-right: 170px; margin-top: 24px; }
-        #slider .slider_line2 { float: right; width: 610px; height: 25px; 
-                                border-bottom: 1px solid lightgray; margin-right: 170px; }
-        #slider .slider_line3 { float: right; width: 610px; height: 25px; 
-                                border-bottom: 1px solid lightgray; margin-right: 170px; }
-        #slider .slider_line4 { float: right; width: 610px; height: 25px; 
-                                border-bottom: 1px solid lightgray; margin-right: 170px; }
-        #slider .blank_space { width: 100%; height: 50px; }
-        #slider .slider_text1 { width: 100%; height: 30px; font-weight: 500;
-                                font-size: 25px; padding: 15px 0px 0px 730px; }
-        #slider .slider_text2 { width: 100%; height: 4px; margin-top: 30px; font-size: 12px;
-                                padding: 15px 0px 0px 730px;}
-        #slider .slider_text3 { width: 100%; height: 2px; margin-top: 30px; font-size: 12px; 
-                                padding: 10px 0px 0px 730px;}
-        #slider .slider_text4 { width: 100%; height: 2px; margin-top: 30px; font-size: 12px; 
-                                padding: 10px 0px 0px 730px;}
-        #slider .slider_text5 { width: 100%; height: 2px; margin-top: 30px; font-size: 12px; 
-                                padding: 10px 0px 0px 730px;}
-        #slider .slider_text5 > span { line-height: 200% } */
-        
                        
                        
         section { width: 1500px; height: 2300px; margin: 0 auto; }
         section .product_detail_image { display: block; margin-left: 200px; }
-        #section2 { width: 1500px; height: 1500px; margin: 0 auto; }
+        #section2 { width: 1500px; height: 3500px; margin: 0 auto; }
 
         #section2 #section_anchor1 { width: 100%; height: 35px; border-bottom: 1px solid #555;
                                    text-align: center; }
         #section_anchor1 .product_detail2 { position: relative; }
         #section_anchor1 .product_detail2 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
-                                                }
+                                                 }
 
         #section_anchor1 .product_detail2 .click_on2 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
                                                        background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
-                                                       font-size: 15px; }
+                                                       font-size: 15px; padding-top: 8px;  }
         
-        #section_anchor1 .product_detail2 .click_on2 > a { color:#444; font-size: 12px; }
+        #section_anchor1 .product_detail2 .click_on2 > a { color:#444; font-size: 12px;  }
         
         #section_anchor1 .product_detail2 > .click_none2 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
                                                                background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
-                                                               font-size: 15px; font-size: 12px; }
+                                                               font-size: 15px; font-size: 12px; padding-top: 8px; }
         #section_anchor1 .product_detail2 > .click_none3 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
                                                                background-color: rgba(233, 233, 233, 0.75); color:#444;
-                                                               font-size: 15px; font-size: 12px; }
+                                                               font-size: 15px; font-size: 12px; padding-top: 8px;}
         #section_anchor1 .product_detail2 > .click_none2 > a:hover { background: rgb( 213, 213, 213 ); }
         #section_anchor1 .product_detail2 > .click_none3 > a:hover { background: rgb( 213, 213, 213 ); }   
 
         #section2 .section2_text1 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; 
-                                    color: #333; font-size: 13px; font-weight: 600; }
+                                    color: #333; font-size: 13px; padding: 0 0px 70px 12px; }
         #section2 .section2_text2 { width: 100%; height: 180px; border-bottom: 1px solid lightgray; 
                                     color: rgb(130, 130, 130); font-size: 13px; }
         #section2 .section2_text3 { width: 100%; height: 250px; border-bottom: 1px solid lightgray; 
                                     color: rgb(130, 130, 130); font-size: 13px; }
+        #section2 .section2_text4 { width: 100%; height: 600px; border-bottom: 1px solid lightgray; 
+                                    color: rgb(130, 130, 130); font-size: 13px; }
+        
+
+
+
+         #section2 #section_anchor2 { width: 100%; height: 35px; border-bottom: 1px solid #555;
+                                   text-align: center; margin-top: 100px; }
+        #section_anchor2 .product_detail3 { position: relative; }
+        #section_anchor2 .product_detail3 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
+                                                 }
+
+        #section_anchor2 .product_detail3 .click_on3 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
+                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
+                                                       font-size: 15px; padding-top: 8px;  }
+        
+        #section_anchor2 .product_detail3 .click_on3 > a { color:#444; font-size: 12px;  }
+        
+        #section_anchor2 .product_detail3 > .click_none4 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
+                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
+                                                               font-size: 15px; font-size: 12px; padding-top: 8px; }
+        #section_anchor2 .product_detail3 > .click_none5 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
+                                                               background-color: rgba(233, 233, 233, 0.75); color:#444;
+                                                               font-size: 15px; font-size: 12px; padding-top: 8px;}
+        #section_anchor2 .product_detail3 > .click_none4 > a:hover { background: rgb( 213, 213, 213 ); }
+        #section_anchor2 .product_detail3 > .click_none5 > a:hover { background: rgb( 213, 213, 213 ); }
+        #section2 #bread_img_bigbox { width: 100%; display:flex; justify-content: space-around; margin-top: 50px; }
+        #section2 .bread_img_smallbox { width: 270px; height: 350px; text-align: center; }
+        #section2 .section_bread_img { box-shadow: 4px 4px 4px #666; }
+        #section2 .text_box_margin { margin-top: 15px; }
+
+
+
+
+        #section2 #section_anchor3 { width: 100%; height: 35px; border-bottom: 1px solid #555;
+                                   text-align: center; margin-top: 100px; }
+        #section_anchor3 .product_detail4 { position: relative; }
+        #section_anchor3 .product_detail4 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
+                                                 }
+
+        #section_anchor3 .product_detail4 .click_on4 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
+                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
+                                                       font-size: 15px; padding-top: 8px;  }
+        
+        #section_anchor3 .product_detail4 .click_on4 > a { color:#444; font-size: 12px;  }
+        
+        #section_anchor3 .product_detail4 > .click_none5 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
+                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
+                                                               font-size: 15px; font-size: 12px; padding-top: 8px; }
+        #section_anchor3 .product_detail4 > .click_none6 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
+                                                               background-color: rgba(233, 233, 233, 0.75); color:#444;
+                                                               font-size: 15px; font-size: 12px; padding-top: 8px;}
+
+        #section2 .section_table1 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; background: rgba(193, 170, 196, 0.2); }
+        #section2 .section_table2 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; }  
+        #section2 .section_table3 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; border-top: 1px solid lightgray; }
+        #section2 .section_table4 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; }
+        #section2 .section_table5 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; }
+        #section2 .section_table6 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; }                                                     
+        #section2 .bread_review_space1 { width: 100%; height: 550px; padding-left: 20px;  }
+        #section2 .bread_review_space1 button { margin-top: 10px;  }
+
+        #section2 .bread_review_image1 { display:block; }
+        #section2 .bread_review_space1 .post_button1 { width: 90px; height: 25px; margin-right: 50px;
+                                                       background: #fff; border: 1px solid lightgray;  }
+        #section2 .bread_review_space1 .post_button1:hover { background: rgba(215, 215, 215, 0.5); }
+        #section2 .bread_review_space2 { width: 100%; height: 65px;  border-bottom: 1px solid lightgray; padding-left: 20px; }
+        #section2 .bread_review_space2 .post_button2 { width: 90px; height: 25px; margin-right: 50px;
+                                                       background: #fff; border: 1px solid lightgray;  }
+        #section2 .bread_review_space2 .post_button2:hover { background: rgba(215, 215, 215, 0.5); }
+        #section2 .bread_review_space3 { width: 100%; height: 65px; border-bottom: 1px solid lightgray; padding-left: 20px; }
+        #section2 .bread_review_space3 .post_button3 { width: 90px; height: 25px; margin-right: 50px;
+                                                       background: #fff; border: 1px solid lightgray;  }
+        #section2 .bread_review_space3 .post_button4:hover { background: rgba(215, 215, 215, 0.5); }
+        #section2 .bread_review_space4 { width: 100%; height: 65px; border-bottom: 1px solid lightgray; padding-left: 20px; }
+        #section2 .bread_review_space4 .post_button4 { width: 90px; height: 25px; margin-right: 50px;
+                                                       background: #fff; border: 1px solid lightgray;  }
+        #section2 .bread_review_space4 .post_button5:hover { background: rgba(215, 215, 215, 0.5); }
+        #section2 .bread_review_space5 { width: 100%; height: 65px;  border-bottom: 1px solid lightgray; padding-left: 20px; }
+        #section2 .bread_review_space5 .post_button5 { width: 90px; height: 25px; margin-right: 50px;
+                                                       background: #fff; border: 1px solid lightgray;  }
+        #section2 .bread_review_space5 .post_button5:hover { background: rgba(215, 215, 215, 0.5); }
+        #section2 .pr_review_buttons { width: 100%; height: 50px; float: right; }
+
 
     </style>
 </head>
 <body>
+    <nav id="nav1">
+        <ul>            
+            <li><a href="#"><img src="img/main/facebook_icon2.png" class="nav_icon" alt="페이스북"></a></li>
+            <li><a href="#"><img src="img/main/twitter_icon.jpg" class="nav_icon" alt="트위터"></a></li>
+            <li><a href="#"><img src="img/main/instagram_icon3.jpg" class="nav_icon" alt="인스타그램"></a></li>
+            <li><a href="#"><img src="img/main/youtube_icon2.jpg" class="nav_icon" alt="유튜브"></a></li>
+            <li class="nav_email"><a href="#">Sign up Email</a></li>
+        </ul>
+            
+
+    </nav>
+    <header>
+
+        <nav id="nav2">
+            <ul id="menu">
+                <li><a href="#">상품 카테고리</a>
+                    <ul class="kategory"> 
+                        <li><a href="#">빵</a></li>
+                        <li><a href="#">케이크</a></li>
+                        <li><a href="#">샌드위치</a></li>
+                        <li><a href="#">도넛</a></li>
+                    </ul>
+                    </li>
+                <li><a href="#">My Shopping</a>
+                    <ul class="kategory2">
+                        <li><a href="#">주문/배송조회</a></li>
+                        <li><a href="#">나의 게시물</a></li>
+                        <li><a href="#">정기배송관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">예약/픽업</a></li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <a href="https://lemondy97.github.io/shoppingmall/"><img src="img/main/bakery_logo.jpg" alt="이리나 로고"></a>
+        </div>
+        <nav id="nav3">
+            <ul id="menu3">
+                <li><a href="#">정기구독</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">고객지원</a>
+                    <ul class="kategory3">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#">상품 Q&A</a></li>
+                    </ul>
+                </li>
+                    
+            </ul>
+        </nav>
+    </header>
     <div id="slider">
         <div id="product"><img src="img/sub/sausage_bread_sub.jpg" alt="소세지빵"></div>
 
         <div class="slider_line1"></div>
         <div class="blank_space"></div>
 
-        <div class="plus_button"><img src="img/sub/plus_icon.png" class="plus"></div>
-        <div class="minus_button"><img src="img/sub/minus_icon.png" class="minus"></div>
+        <!-- <div class="plus_button"><img src="img/sub/plus_icon.png" class="plus"></div>
+        <div class="minus_button"><img src="img/sub/minus_icon.png" class="minus"></div> -->
 
         
         <table class="table1">
@@ -237,7 +352,9 @@
             </colgroup>
             <td>뉴욕식 소세지빵(4개입)</td>
             <td>
+                <img src="img/sub/plus_icon.png" class="plus" alt="더하기 아이콘">
                 <input type="text" id="quantity" name="quantity_option" value="1" min="1" size="1"  maxlength="3" pattern="^[0-9]+$">       
+                <img src="img/sub/minus_icon.png" class="minus" alt="빼기 아이콘">
             </td>
             <td>16000원</td>
 
@@ -277,38 +394,38 @@
             <div class="pay_button"><img src="img/sub/Irinapay_button.jpg"></div>
             <button type="button" class="wish_list">찜</button>
             <ul class="social_media">
-                <li><a href="#"><img src="img/sub/facebook_icon_sub.png"></a></li>
-                <li><a href="#"><img src="img/sub/twitter_icon_sub.png"></a></li>
-                <li><a href="#"><img src="img/sub/google_icon_sub.jpg"></a></li>
-                <li><a href="#"><img src="img/sub/pinterest_icon_sub.png"></a></li>
+                <li><a href="#"><img src="img/sub/facebook_icon_sub.png" alt="페이스북 아이콘"></a></li>
+                <li><a href="#"><img src="img/sub/twitter_icon_sub.png" alt="트위터 아이콘"></a></li>
+                <li><a href="#"><img src="img/sub/google_icon_sub.jpg" alt="구글 아이콘"></a></li>
+                <li><a href="#"><img src="img/sub/pinterest_icon_sub.png" alt="핀터레스트 아이콘"></a></li>
             </ul>
         </div>
         <br><br>
         <div id="slider_anchor1">
         <ul class="product_detail1">
-            <li class="click_on1"><a href="#">상품상세정보</a></li>
-            <li class="click_none1"><a href="#">상품구매안내</a></li>
-            <li class="click_none1"><a href="#">관련상품</a></li>
-            <li class="click_none1"><a href="#">상품후기</a></li>
-            <li class="click_none1"><a href="#">상품문의</a></li>
+            <li class="click_on1"><a href="#pr_detail">상품상세정보</a></li>
+            <li class="click_none1"><a href="#pr_purchase">상품구매안내</a></li>
+            <li class="click_none1"><a href="#pr_other">관련상품</a></li>
+            <li class="click_none1"><a href="#pr_review">상품후기</a></li>
+            <li class="click_none1"><a href="#pr_Inquiry">상품문의</a></li>
         </ul>
         </div>
     </div>
     <section>
-        <img src="img/sub/Product_details_page.jpg" class="product_detail_image">
+        <img src="img/sub/Product_details_page.jpg" class="product_detail_image" id="pr_detail">
     </section>
         <div id="section2"> 
             <div id="section_anchor1">
                 <ul class="product_detail2">
-                    <li class="click_none3"><a href="#">상품상세정보</a></li>
-                    <li class="click_on2"><a href="#">상품구매안내</a></li>
-                    <li class="click_none2"><a href="#">관련상품</a></li>
-                    <li class="click_none2"><a href="#">상품후기</a></li>
-                    <li class="click_none2"><a href="#">상품문의</a></li>
+                    <li class="click_none3"><a href="#pr_detail">상품상세정보</a></li>
+                    <li class="click_on2"><a href="#pr_purchase">상품구매안내</a></li>
+                    <li class="click_none2"><a href="#pr_other">관련상품</a></li>
+                    <li class="click_none2"><a href="#pr_review">상품후기</a></li>
+                    <li class="click_none2"><a href="#pr_Inquiry">상품문의</a></li>
                 </ul>
             </div>
             <div class="section2_text1">
-                <br>&emsp;상품결제정보
+                <br>&emsp;<h4 id="pr_purchase">상품결제정보</h4>
             </div>
             <div class="section2_text2">
                 <br>
@@ -320,21 +437,242 @@
                     &emsp;무통장 입금은 상품 구매 대금은 PC뱅킹, 인터넷뱅킹, 텔레뱅킹 혹은 가까운 은행에서 직접 입금하시면 됩니다.<br>     
                     &emsp;주문시 입력한 입금자명과 실제입금자의 성명이 반드시 일치하여야 하며, 7일 이내로 입금을 하셔야 하며 입금되지 않은 주문은 자동취소 됩니다.
                 </p><br><br><br><br>
-                <p style="color:#333; font-weight: 600;">
+                <h4 style="color:#333;">
                     &emsp;배송정보
-                </p>
+                </h4>
             </div>
             <div class="section2_text3">
+                <p><br><br><br><br>
+                    &emsp;배송 방법 : 택배<br>
+                    &emsp;배송 지역 : 전국지역<br>
+                    &emsp;배송 비용 : 무료(1만5000원 이상 구매시)<br>
+                    &emsp;배송 기간 : 1일 ~ 3일<br>
+                    &emsp;배송 안내 : - 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.<br>
+                    &emsp;고객님께서 주문하신 상품은 입금 확인후 배송해 드립니다. 다만, 상품종류에 따라서 상품의 배송이 다소 지연될 수 있습니다.</p><br><br><br>
+                    <h4 style="color:#333">
+                        &emsp;교환 및 반품정보
+                    </h4>
+                
+            </div>
+            <div class="section2_text4">
+                <p><br><br>&emsp;교환 및 반품 주소<br>
+                    &emsp; - [12500] 경기도 서울시 언주로 350길 50(신사동) 이리나복합물류(주) G동 동관 3층 이리나샵</p><br><br>
+
+                <p> &emsp;교환 및 반품이 가능한 경우<br>
+                    &emsp;- 상품을 공급 받으신 날로부터 7일이내 단, 주문제작 상품의 경우 제작이후 교환/반품이 불가능 하며<br>
+                    &emsp;그외 상품의 경우 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우에는 교환/반품이 불가능합니다.<br>
+                    &emsp;- 공급받으신 상품 및 용역의 내용이 표시.광고 내용과<br>
+                    &emsp;다르거나 다르게 이행된 경우에는 공급받은 날로부터 3월이내, 그사실을 알게 된 날로부터 30일이내</p><br><br>
                 <p>
-                배송 방법 : 택배<br>
-                배송 지역 : 전국지역<br>
-                배송 비용 : 무료(1만5000원 이상 구매시)<br>
-                배송 기간 : 1일 ~ 3일<br>
-                배송 안내 : - 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.<br>
-                고객님께서 주문하신 상품은 입금 확인후 배송해 드립니다. 다만, 상품종류에 따라서 상품의 배송이 다소 지연될 수 있습니다.<br>
-                </p>
+                    &emsp;교환 및 반품이 불가능한 경우<br>
+                    &emsp;- 고객님의 책임 있는 사유로 상품등이 멸실 또는 훼손된 경우. 단, 상품의 내용을 확인하기 위하여<br>
+                    &emsp;포장 등을 훼손한 경우는 제외<br>
+                    &emsp;- 포장을 개봉하였거나 포장이 훼손되어 상품가치가 상실된 경우<br>
+                    &emsp;(예 : 가전제품, 식품, 음반 등, 단 액정화면이 부착된 노트북, LCD모니터, 디지털 카메라 등의 불량화소에<br>
+                    &emsp;따른 반품/교환은 제조사 기준에 따릅니다.)<br>
+                    &emsp;- 고객님의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우 단, 화장품등의 경우 시용제품을<br>
+                    &emsp;제공한 경우에 한 합니다.<br>
+                    &emsp;- 시간의 경과에 의하여 재판매가 곤란할 정도로 상품등의 가치가 현저히 감소한 경우<br>
+                    &emsp;- 복제가 가능한 상품등의 포장을 훼손한 경우<br>
+                    &emsp;(자세한 내용은 고객만족센터 1:1 E-MAIL상담을 이용해 주시기 바랍니다.)
+                </p><br><br><br><br>
+                <p>
+                    &emsp;※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 상품반송 비용은 고객님께서 부담하셔야 합니다.<br>
+                    &emsp;(색상 교환, 사이즈 교환 등 포함)
+                </p><br><br>
+                    &emsp;<h4 id="pr_other" style="color:#333">서비스문의</h4>
+                
+            </div>
+            <div id="section_anchor2">
+                <ul class="product_detail3">
+                    <li class="click_none5"><a href="#pr_detail">상품상세정보</a></li>
+                    <li class="click_none4"><a href="#pr_purchase">상품구매안내</a></li>
+                    <li class="click_on3"><a href="#pr_other">관련상품</a></li>
+                    <li class="click_none4"><a href="#pr_review">상품후기</a></li>
+                    <li class="click_none4"><a href="#pr_Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+            <div id="bread_img_bigbox">
+                <div class="bread_img_smallbox">
+                    <a href="#"><img src="img/sub/baguette.jpg" alt="바게트" class="section_bread_img"></a>
+                    <h4 class="text_box_margin" id="pr_review">프렌치바게트(3개)</h4>
+                    <p>7500원</p>
+                </div>
+                <div class="bread_img_smallbox">
+                    <a href="#"><img src="img/sub/custard.jpeg" alt="슈크림 소보루"  class="section_bread_img"></a>
+                    <h4 class="text_box_margin">슈크림 소보루(2개)</h4>
+                    <p>4000원</p>
+                </div>
+                <div class="bread_img_smallbox">
+                    <a href="#"><img src="img/sub/donut.png" alt="도넛"  class="section_bread_img"></a>
+                    <h4 class="text_box_margin">도넛(9개입)</h4>
+                    <p>15000원</p>
+                </div>
+                <div class="bread_img_smallbox">
+                    <a href="#"><img src="img/sub/sandwich.png" alt="샌드위치"  class="section_bread_img"></a>
+                    <h4 class="text_box_margin">샌드위치(2개입)</h4>
+                    <p>6000원</p>
+                </div>
+            </div>
+            <div id="section_anchor3">
+                <ul class="product_detail4">
+                    <li class="click_none6"><a href="#pr_detail">상품상세정보</a></li>
+                    <li class="click_none5"><a href="#pr_purchase">상품구매안내</a></li>
+                    <li class="click_none5"><a href="#pr_other">관련상품</a></li>
+                    <li class="click_on4"><a href="#pr_review">상품후기</a></li>
+                    <li class="click_none5"><a href="#pr_Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+            <table class="section_table1">
+                <colgroup>
+                    <col style="width: 30%;">
+                    <col style="width: 40%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                </colgroup>
+                <td>번호</td>
+                <td>제목</td>
+                <td>작성자</td>
+                <td>작성일</td>
+                <td>조회</td>
+                <td>평점</td>
+            </table>
+            <table class="section_table2">
+                <colgroup>
+                    <col style="width: 30%;">
+                    <col style="width: 40%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                </colgroup>
+                <td>105</td>
+                <td>가격대비 양이 정말 많아요, 다음에 또 시켜야겠어요.</td>
+                <td>Bar*******</td>
+                <td>2022-04-14</td>
+                <td>1037</td>
+                <td><img src="img/sub/star_rating.png" alt="별점"></td>
+            </table>
+            <div class="bread_review_space1">
+                <p>가성비가 매우 좋아요. 무조건 사세요.</p><br>
+                <img src="img/sub/bread_review1.jpg" class="bread_review_image1">
+                <button class="post_button1">게시글 수정</button>
+            </div>
+            <table class="section_table3">
+                <colgroup>
+                    <col style="width: 35%;">
+                    <col style="width: 35%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                </colgroup>
+                <td>211</td>
+                <td>오 정말 생각외네요</td>
+                <td>pik***</td>
+                <td>2022-04-15</td>
+                <td>638</td>
+                <td><img src="img/sub/star_rating.png" alt="별점"></td>
+            </table>
+            <div class="bread_review_space2">
+                <p>좀 비싸다고 생각해서 혹시 돈만 버리는거 아닌가 생각했는데 먹고 보니 생각이 바뀌었어요.</p>
+                <button class="post_button2">게시글 수정</button>
+            </div>
+            <table class="section_table4">
+                <colgroup>
+                    <col style="width: 35%;">
+                    <col style="width: 35%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                </colgroup>
+                <td>397</td>
+                <td>최상급은 아니지만,</td>
+                <td>레**</td>
+                <td>2022-04-17</td>
+                <td>402</td>
+                <td><img src="img/sub/star_rating4.png" alt="별점"></td>
+            </table>
+            <div class="bread_review_space3">
+                <p>뉴욕에서 사먹은 원조보다는 만큼은 아니지만 만족스럽습니다.</p>
+                <button class="post_button3">게시글 수정</button>
+            </div>
+            <table class="section_table5">
+                <colgroup>
+                    <col style="width: 35%;">
+                    <col style="width: 35%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                </colgroup>
+                <td>459</td>
+                <td>그냥그래요</td>
+                <td>대***</td>
+                <td>2022-04-19</td>
+                <td>518</td>
+                <td><img src="img/sub/star_rating2.png" alt="별점"></td>
+            </table>
+            <div class="bread_review_space4">
+                <p>기대했는데 별로에요 평범합니다.</p>
+                <button class="post_button4">게시글 수정</button>
+            </div>
+            <table class="section_table6">
+                <colgroup>
+                    <col style="width: 35%;">
+                    <col style="width: 35%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                    <col style="width: 7%;">
+                    <col style="width: 8%;">
+                </colgroup>
+                <td>634</td>
+                <td>괜히샀다</td>
+                <td>Art****</td>
+                <td>2022-04-21</td>
+                <td>783</td>
+                <td><img src="img/sub/star_rating3.png" alt="별점"></td>
+            </table>
+            <div class="bread_review_space5">
+                <p>사먹을게 못됨, 먹지마시길.</p>
+                <button class="post_button5">게시글 수정</button>
+            </div class="pr_review_buttons">
+            <div>
+            <button>후기작성하기</button>
+            <button>모두보기</button>
             </div>
         </div>
+
+
+
+
+
+
+        <footer>
+            <div id="logo2"><img src="img/main/bakery_logo2.jpg" alt="이리나 로고">
+            </div>
+            <div class="text_box3">
+                <br>
+                <h3>About Irina's shop</h3><br>
+                <p>저렴하면서도 고급스러운 외형의<br> 빵을 만들고
+                고객에게 선사하는 브랜드입니다.</p></div>
+                <nav id="nav4">
+                    <ul>
+                        <li><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">법적고지</a></li>
+                        <li><a href="#">안전거래 가이드</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </nav>
+            <p class="email_and_phone">Irina's shop_master@gmail.com | 사업자등록번호:300-80-99000<br>
+                                       통신판매업신고번호 2022-서울특별시-1111호 | 대표이사 Wendy john
+            </p>
+            <div class="copyright">ⓒCopyright 2018 Irina'shop all right reserved</div>
+        </footer>
 
         
 </body>
