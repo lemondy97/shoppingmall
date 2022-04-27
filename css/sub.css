@@ -27,25 +27,30 @@
                             }
 
         #slider2 a:visited { color:#333; }
+        #section2 a:visited { color:#333; }
 
         #slider { width: 1500px; height: 470px; margin: 0 auto;
                     position: relative;}
-        #slider #product > img { float: left; margin: 50px 0 0px 50px; }
-        #slider #product { width: 650px; position: absolute;
-                           position: absolute; }
-        #slider .table1 { width: 725px; height: 200px; border-bottom: 1px solid lightgray;
-                position: absolute; top: 50px; right: 50px; border-top: 2px solid #333; font-family: 'Hahmlet-Regular';  }
+
+        #slider #product1 { width: 650px; position: absolute; top: 0; left: 50px;  }
+        #slider #product2 { width: 650px; display:none; position: absolute; top: 0; left: 50px; }
+        #slider #product3 { width: 650px; display:none; position: absolute; top: 0; left: 50px; }
+        #wrap { width: 650px; width: 365px; position: relative; margin-left: -50px; }
+
+
+        #slider .table1 { width: 750px; height: 200px; border-bottom: 1px solid lightgray;
+                position: absolute; top: 0px; right: 50px; border-top: 2px solid #333; font-family: 'Hahmlet-Regular';  }
         .table1 td { padding: 0px 5px; }
         #slider .best_bread { background: coral; color:#fff;
                               padding: 0 10px 0 10px; border-radius: 10px; }
 
 
-       #slider .table2 { width: 725px; height: 50px; border-bottom: 1px solid lightgray;
-                         position: absolute; top: 250px; right: 50px; background: rgb(200, 200, 200);
+       #slider .table2 { width: 750px; height: 50px; border-bottom: 1px solid lightgray;
+                         position: absolute; top: 200px; right: 50px; background: rgb(200, 200, 200);
                          font-family: 'Hahmlet-Regular'; }
         
-        #slider .table3 { width: 725px; height: 50px; border-bottom: 1px solid lightgray;
-                          position: absolute; top: 300px; right: 50px; font-family: 'Hahmlet-Regular'; }
+        #slider .table3 { width: 750px; height: 50px; border-bottom: 1px solid lightgray;
+                          position: absolute; top: 250px; right: 50px; font-family: 'Hahmlet-Regular'; }
         #slider .table3 td:nth-of-type(2) { position:relative; }
         #slider .table3 td:nth-of-type(2) img { position: absolute; top:0; left:0; }
         #slider .table3 td:nth-of-type(2) img:nth-of-type(1) { top:20px; left: 40px; cursor: pointer; }
@@ -73,7 +78,7 @@
         #slider .button3:hover { background: linear-gradient(to bottom,#d6d0db 40%,#d2cfdb 100%); }
         
         #slider2 { width: 1500px; height: 200px; margin: 0 auto; }
-        #slider2 .small_bread { width: 200px; height: 112px; margin: -30px 0px 0px 50px;
+        #slider2 .small_bread { width: 150px; height: 84px; margin-top: -30px;
                                 opacity: 0.87; cursor: pointer; display:inline; }
         #slider2 .line { width: 340px; height: 10px; border-top: 2px solid #333; float:right; margin-right: 50px; margin-top: -30px; }
         #slider2 .payment { width: 340px; height: 60px; display: flex; flex-wrap: wrap; float: right; margin-bottom: 20px; }

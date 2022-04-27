@@ -9,12 +9,44 @@
         <link rel="stylesheet" href="css/common.css">
         <link rel="stylesheet" href="css/sub.css">
 
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+        <!-- <script>
+            $function(){ 
+                var sum= 0;
+                $0('#increase').on('click', function(){
+                $(this).each(function(){
+                sum+=parseInt($(this).text());    
+                })
+                $('#quantity').text(sum);
+                });
+
+                $()
+            }
+        </script> -->
     <script>
-        var sum= 0;
-        function inc(){ if("increase")sum+= parseInt(increase.value)  
-                       else { sum-=(increase.value); }
-                     }
-        document.getElementById("quantity").value=sum;
+        $(function(){ 
+            $(".small_bread img:nth-of-type(1)").hover(function(){
+            $("#product1").fadeIn();
+            $("#product2").hide();
+            $("#product3").hide();
+        });
+
+        $(".small_bread img:nth-of-type(2)").hover(function(){
+            $("#product2").fadeIn();
+            $("#product1").hide();
+            $("#product3").hide();
+        });
+
+        $(".small_bread img:nth-of-type(3)").hover(function(){
+            $("#product3").fadeIn();
+            $("#product1").hide();
+            $("#product2").hide();
+
+        });
+    });
+       
+         
+        
     </script>
 
 </head>
@@ -71,13 +103,11 @@
         </nav>
     </header>
     <div id="slider">
-        <div id="product"><img src="img/sub/sausage_bread_sub.jpg" alt="소세지빵"></div>
-
-        <div class="slider_line1"></div>
-        <div class="blank_space"></div>
-
-        <!-- <div class="plus_button"><img src="img/sub/plus_icon.png" class="plus"></div>
-        <div class="minus_button"><img src="img/sub/minus_icon.png" class="minus"></div> -->
+        <div id="wrap">
+            <div id="product1"><img src="img/sub/sausage_bread_sub.jpg" alt="소세지빵"></div>
+            <div id="product2"><img src="img/sub/sausage_bread2_sub.jpg" alt="소세지빵"></div>
+            <div id="product3"><img src="img/sub/sausage_bread3_sub.jpg" alt="소세지빵"></div>
+        </div>
 
         
         <table class="table1">
@@ -134,9 +164,10 @@
             </colgroup>
             <td>뉴욕식 소세지빵(4개입)</td>
             <td>
-                <img src="img/sub/plus_icon.png" class="plus" id="increase" value="1" alt="더하기 아이콘" onclick="inc(this)">
+                
+                <img src="img/sub/plus_icon.png" class="plus" id="increase" value="result1" alt="더하기 아이콘" onclick="">
                 <input type="text" id="quantity" name="quantity_option" value="1" min="1" size="1"  maxlength="3" pattern="^[0-9]+$" >       
-                <img src="img/sub/minus_icon.png" class="minus" id="decrease" value="-1" alt="빼기 아이콘" onclick="dec(this)">
+                <img src="img/sub/minus_icon.png" class="minus" id="decrease" value="result2" alt="빼기 아이콘" onclick="dec(this)">
             </td>
             <td>16000원</td>
 
@@ -149,28 +180,15 @@
             <span><b>총 상품금액</b>(수량):<strong>16000원</strong>(1개)</span>
         </div>
         
-
-
-        <!-- <div class="slider_line2"></div>
-        <div class="slider_text2"><br> 〉 판매가 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;16000원</div>
-        <div class="slider_line3"></div>
-        <div class="slider_text3"> 〉 국내 · 해외 배송 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;국내배송</div>
-        <div class="slider_text4"> 〉 배송방법 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;택배</div>
-        <div class="slider_text5"> 〉 배송비 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-                                <span>조건부 무료</span><button type="button">배송비할인</button>
-                            </div>
-        <div class="slider_line4"></div>
-    </div>
-    <div id="slider2"> -->
-
-    
     
         </div>
         
 </div>
     <div id="slider2">
         <div class="line"></div>
-        <div class="small_bread"><img src="img/sub/small_sausage_bread_sub.png"></div>
+        <div class="small_bread">
+            <img src="img/sub/small_sausage_bread_sub.png"><img src="img/sub/small_sausage_bread2_sub.jpg"><img src="img/sub/small_sausage_bread3_sub.jpg">
+        </div>
         <div class="payment">
             <div class="pay_img"><img src="img/sub/pay_icon.png"></div>
             <div class="pay_button"><img src="img/sub/Irinapay_button.jpg"></div>
@@ -413,7 +431,7 @@
                 </colgroup>
                 <td>634</td>
                 <td>괜히샀다</td>
-                <td>Art****</td>
+                <td>아****</td>
                 <td>2022-04-21</td>
                 <td>783</td>
                 <td><img src="img/sub/star_rating3.png" alt="별점"></td>
