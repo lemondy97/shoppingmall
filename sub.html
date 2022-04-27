@@ -7,294 +7,16 @@
     <title>주문 & 결재</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/common.css">
-        
+        <link rel="stylesheet" href="css/sub.css">
 
-    <style>
-        @font-face {
-        font-family: 'InfinitySans-BoldA1';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/InfinitySans-BoldA1.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-                            }
-        @font-face {
-        font-family: 'Hahmlet-Regular';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/Hahmlet-Regular.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-                            }
-        @font-face {
-        font-family: 'paybooc-Medium';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-                            }
-        @font-face {
-        font-family: 'KOHINanumOTFL';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHINanumOTFL.woff') format('woff');
-        font-weight: normal;
-        font-style: normal;
-                            }
+    <script>
+        var sum= 0;
+        function inc(){ if("increase")sum+= parseInt(increase.value)  
+                       else { sum-=(increase.value); }
+                     }
+        document.getElementById("quantity").value=sum;
+    </script>
 
-        #slider2 a:visited { color:#333; }
-
-        #slider { width: 1500px; height: 470px; margin: 0 auto;
-                    position: relative;}
-        #slider #product > img { float: left; margin: 50px 0 0px 50px; }
-        #slider #product { width: 650px; position: absolute;
-                           position: absolute; }
-        #slider .table1 { width: 725px; height: 200px; border-bottom: 1px solid lightgray;
-                position: absolute; top: 50px; right: 50px; border-top: 2px solid #333; font-family: 'Hahmlet-Regular';  }
-        .table1 td { padding: 0px 5px; }
-        #slider .best_bread { background: coral; color:#fff;
-                              padding: 0 10px 0 10px; border-radius: 10px; }
-
-
-       #slider .table2 { width: 725px; height: 50px; border-bottom: 1px solid lightgray;
-                         position: absolute; top: 250px; right: 50px; background: rgb(200, 200, 200);
-                         font-family: 'Hahmlet-Regular'; }
-        
-        #slider .table3 { width: 725px; height: 50px; border-bottom: 1px solid lightgray;
-                          position: absolute; top: 300px; right: 50px; font-family: 'Hahmlet-Regular'; }
-        #slider .table3 td:nth-of-type(2) { position:relative; }
-        #slider .table3 td:nth-of-type(2) img { position: absolute; top:0; left:0; }
-        #slider .table3 td:nth-of-type(2) img:nth-of-type(1) { top:20px; left: 40px; }
-        #slider .table3 td:nth-of-type(2) img:nth-of-type(2) { top:20px; left: -15px; }
-                          /* #slider .plus_button { width: 15px; height: 15px; position: absolute; top: 260px; right: 475px; }
-        #slider .plus_button .plus { cursor: pointer; }
-        #slider .minus_button .minus { cursor: pointer; }
-        #slider .minus_button { width: 15px; height: 15px; position: absolute; top: 275px; right: 475px; }                   */
-
-        #slider .buttons { width: 725px; height: 65px; border-bottom: 1px solid lightgray;
-                          position: absolute; top: 350px; right: 50px; }
-        #slider .buttons > span { font-size: 12px;  }
-        #slider .buttons > span > strong { font-size: 16px;  }
-        #slider .button1 { width: 175px; height: 40px; margin: 15px 0 0 10px; float: left;
-                           background: linear-gradient(to bottom,#142424 100%,#152324 100%); color:#fff; 
-                           box-shadow: 0 2px 2px rgb(0 0 0 / 4%); border-style:none; text-shadow: 0 0 2px rgb(0 0 0 / 20%); }
-        #slider .button1:hover { background: linear-gradient(to bottom,#213d3d 100%,#254647 100%); }  
-
-        #slider .button2 { width: 125px; height: 40px; margin: 15px 0 0 10px; float: left;
-                           background: linear-gradient(to bottom,#eae6ee 40%,#dedbe6 100%); color:#333;
-                           border-style: none; box-shadow: 0 2px 2px rgb(0 0 0 / 4%); text-shadow: 0 0 2px rgb(0 0 0 / 20%); }
-        #slider .button2:hover { background: linear-gradient(to bottom,#d6d0db 40%,#d2cfdb 100%); }
-
-        #slider .button3 { width: 125px; height: 40px; margin: 15px 0 0 10px; float: left;
-                           background: linear-gradient(to bottom,#eae6ee 40%,#dedbe6 100%); color:#333;
-                           border-style: none; box-shadow: 0 2px 2px rgb(0 0 0 / 4%); text-shadow: 0 0 2px rgb(0 0 0 / 20%); }
-        #slider .button3:hover { background: linear-gradient(to bottom,#d6d0db 40%,#d2cfdb 100%); }
-        
-        #slider2 { width: 1500px; height: 200px; margin: 0 auto; }
-        #slider2 .small_bread { width: 200px; height: 112px; margin: -30px 0px 0px 50px;
-                                opacity: 0.87; cursor: pointer; display:inline; }
-        #slider2 .line { width: 340px; height: 10px; border-top: 2px solid #333; float:right; margin-right: 50px; margin-top: -30px; }
-        #slider2 .payment { width: 340px; height: 60px; display: flex; flex-wrap: wrap; float: right; margin-bottom: 20px; }
-        #slider2 .pay_img { width: 65px; height: 40px; display: inline-block; margin-right: 10px; }
-        #slider2 .pay_button { width: 146px; height: 42px; display: inline-block; margin-right: 10px; cursor:pointer; }
-        #slider2 .wish_list { width: 40px; height: 40px; background: #fff; color:steelblue; border: 1px solid lightgray;
-                              font-weight: 900; font-size: 18px; }
-        #slider2 .social_media { margin-left: -850px; }
-        #slider2 .social_media  > li { float: left; padding: 10px 0px 0 20px; }
-
-        #slider2 #slider_anchor1 { width: 100%; height: 35px; border-bottom: 1px solid #555;
-                                   text-align: center; }
-        #slider_anchor1 .product_detail1 { position: relative; }
-        #slider_anchor1 .product_detail1 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
-                                              }
-
-        #slider_anchor1 .product_detail1 .click_on1 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
-                                                      background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
-                                                      font-size: 15px; padding-top: 8px; }
-        
-        #slider_anchor1 .product_detail1 .click_on1 > a { color:#444; font-size: 12px; }
-        
-        #slider_anchor1 .product_detail1 > .click_none1 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                              background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
-                                                              font-size: 15px; font-size: 12px; padding-top: 8px; }
-        #slider_anchor1 .product_detail1 > .click_none1 > a:hover { background: rgb( 213, 213, 213 ); }  
-
-        
-
-
-
-
-        
-      
-
-        button { margin: 3px; cursor: pointer; }
-
-                       
-                       
-        section { width: 1500px; height: 2300px; margin: 0 auto; }
-        section .product_detail_image { display: block; margin-left: 200px; }
-        #section2 { width: 1500px; height: 3725px; margin: 0 auto; }
-
-        #section2 #section_anchor1 { width: 100%; height: 35px; border-bottom: 1px solid #555;
-                                   text-align: center; }
-        #section_anchor1 .product_detail2 { position: relative; }
-        #section_anchor1 .product_detail2 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
-                                                 }
-
-        #section_anchor1 .product_detail2 .click_on2 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
-                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
-                                                       font-size: 15px; padding-top: 8px;  }
-        
-        #section_anchor1 .product_detail2 .click_on2 > a { color:#444; font-size: 12px;  }
-        
-        #section_anchor1 .product_detail2 > .click_none2 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
-                                                               font-size: 15px; font-size: 12px; padding-top: 8px; }
-        #section_anchor1 .product_detail2 > .click_none3 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                               background-color: rgba(233, 233, 233, 0.75); color:#444;
-                                                               font-size: 15px; font-size: 12px; padding-top: 8px;}
-        #section_anchor1 .product_detail2 > .click_none2 > a:hover { background: rgb( 213, 213, 213 ); }
-        #section_anchor1 .product_detail2 > .click_none3 > a:hover { background: rgb( 213, 213, 213 ); }   
-
-        #section2 .section2_text1 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; 
-                                    color: #333; font-size: 13px; padding: 0 0px 70px 12px; }
-        #section2 .section2_text2 { width: 100%; height: 180px; border-bottom: 1px solid lightgray; 
-                                    color: rgb(130, 130, 130); font-size: 13px; }
-        #section2 .section2_text3 { width: 100%; height: 250px; border-bottom: 1px solid lightgray; 
-                                    color: rgb(130, 130, 130); font-size: 13px; }
-        #section2 .section2_text4 { width: 100%; height: 600px; border-bottom: 1px solid lightgray; 
-                                    color: rgb(130, 130, 130); font-size: 13px; }
-        
-
-
-
-         #section2 #section_anchor2 { width: 100%; height: 35px; border-bottom: 1px solid #555;
-                                   text-align: center; margin-top: 100px; }
-        #section_anchor2 .product_detail3 { position: relative; }
-        #section_anchor2 .product_detail3 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
-                                                 }
-
-        #section_anchor2 .product_detail3 .click_on3 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
-                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
-                                                       font-size: 15px; padding-top: 8px;  }
-        
-        #section_anchor2 .product_detail3 .click_on3 > a { color:#444; font-size: 12px;  }
-        
-        #section_anchor2 .product_detail3 > .click_none4 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
-                                                               font-size: 15px; font-size: 12px; padding-top: 8px; }
-        #section_anchor2 .product_detail3 > .click_none5 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                               background-color: rgba(233, 233, 233, 0.75); color:#444;
-                                                               font-size: 15px; font-size: 12px; padding-top: 8px;}
-        #section_anchor2 .product_detail3 > .click_none4 > a:hover { background: rgb( 213, 213, 213 ); }
-        #section_anchor2 .product_detail3 > .click_none5 > a:hover { background: rgb( 213, 213, 213 ); }
-        #section2 #bread_img_bigbox { width: 100%; display:flex; justify-content: space-around; margin-top: 50px; }
-        #section2 .bread_img_smallbox { width: 270px; height: 350px; text-align: center; }
-        #section2 .section_bread_img { box-shadow: 4px 4px 4px #666; }
-        #section2 .text_box_margin { margin-top: 15px; }
-
-
-
-
-        #section2 #section_anchor3 { width: 100%; height: 35px; border-bottom: 1px solid #555;
-                                   text-align: center; margin-top: 100px; margin-bottom: 20px; }
-        #section_anchor3 .product_detail4 { position: relative; }
-        #section_anchor3 .product_detail4 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
-                                                 }
-
-        #section_anchor3 .product_detail4 .click_on4 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
-                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
-                                                       font-size: 15px; padding-top: 8px;  }
-        
-        #section_anchor3 .product_detail4 .click_on4 > a { color:#444; font-size: 12px;  }
-        
-        #section_anchor3 .product_detail4 > .click_none5 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
-                                                               font-size: 15px; font-size: 12px; padding-top: 8px; }
-        #section_anchor3 .product_detail4 > .click_none6 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                               background-color: rgba(233, 233, 233, 0.75); color:#444;
-                                                               font-size: 15px; font-size: 12px; padding-top: 8px;}
-        #section_anchor3 .product_detail4 > .click_none5 > a:hover { background: rgb( 213, 213, 213 ); }
-        #section_anchor3 .product_detail4 > .click_none6 > a:hover { background: rgb( 213, 213, 213 ); } 
-
-
-        #section2 .section_table1 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'Hahmlet-Regular';
-                                    background: rgba(193, 170, 196, 0.2); border-top: 1px solid lightgray;  }
-        #section2 .section_table2 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }  
-        #section2 .section_table3 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; border-top: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }
-        #section2 .section_table4 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }
-        #section2 .section_table5 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }
-        #section2 .section_table6 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }                                                     
-        #section2 .bread_review_space1 { width: 100%; height: 550px; padding-left: 20px;  }
-        #section2 .bread_review_space1 p { font-family: 'KOHINanumOTFL'; }
-        #section2 .bread_review_space1 button { margin-top: 10px;  }
-
-        #section2 .bread_review_image1 { display:block; }
-        #section2 .bread_review_space1 .post_button1 { width: 90px; height: 25px; margin-right: 50px;
-                                                       background: #fff; border: 1px solid lightgray;  } 
-        #section2 .bread_review_space1 .post_button1:hover { background: rgba(215, 215, 215, 0.5); }
-        #section2 .bread_review_space2 { width: 100%; height: 65px;  border-bottom: 1px solid lightgray; padding-left: 20px; }
-        #section2 .bread_review_space2 p { font-family: 'KOHINanumOTFL'; }
-        #section2 .bread_review_space2 .post_button2 { width: 90px; height: 25px; margin-right: 50px;
-                                                       background: #fff; border: 1px solid lightgray;  }
-        #section2 .bread_review_space2 .post_button2:hover { background: rgba(215, 215, 215, 0.5); }
-        #section2 .bread_review_space3 { width: 100%; height: 65px; border-bottom: 1px solid lightgray; padding-left: 20px; }
-        #section2 .bread_review_space3 p { font-family: 'KOHINanumOTFL'; }
-        #section2 .bread_review_space3 .post_button3 { width: 90px; height: 25px; margin-right: 50px;
-                                                       background: #fff; border: 1px solid lightgray;  }
-        #section2 .bread_review_space3 .post_button4:hover { background: rgba(215, 215, 215, 0.5); }
-        #section2 .bread_review_space4 { width: 100%; height: 65px; border-bottom: 1px solid lightgray; padding-left: 20px; }
-        #section2 .bread_review_space4 p { font-family: 'KOHINanumOTFL'; }
-        #section2 .bread_review_space4 .post_button4 { width: 90px; height: 25px; margin-right: 50px;
-                                                       background: #fff; border: 1px solid lightgray;  }
-        #section2 .bread_review_space4 .post_button5:hover { background: rgba(215, 215, 215, 0.5); }
-        #section2 .bread_review_space5 { width: 100%; height: 65px;  border-bottom: 1px solid lightgray; padding-left: 20px; }
-        #section2 .bread_review_space5 p { font-family: 'KOHINanumOTFL'; }
-        #section2 .bread_review_space5 .post_button5 { width: 90px; height: 25px; margin-right: 50px;
-                                                       background: #fff; border: 1px solid lightgray;  }
-        #section2 .bread_review_space5 .post_button5:hover { background: rgba(215, 215, 215, 0.5); }
-        #section2 .pr_review_buttons { width: 100%; height: 100px;  }
-        #section2 .review_button2 { width: 90px; height: 30px; background: linear-gradient(to bottom,#142424 100%,#152324 100%); color:#fff;
-                                    box-shadow: 0 2px 2px rgb(0 0 0 / 4%); border-style:none; float: right; }
-        #section2 .review_button2:hover { background: linear-gradient(to bottom,#213d3d 100%,#254647 100%); }
-        #section2 .review_button1 { width: 60px; height: 30px; background: linear-gradient(to bottom,#eae6ee 40%,#dedbe6 100%); color:#333;
-                                    border-style: none; box-shadow: 0 2px 2px rgb(0 0 0 / 4%);  float: right; }
-        #section2 .review_button1:hover { background: linear-gradient(to bottom,#d6d0db 40%,#d2cfdb 100%); }
-        #section2 #review_pages_icons { width: 100%; height: 40px; text-align: center; margin-left: 525px; }
-        #review_pages_icons .review_pages > li { float: left; padding : 0px 20px 0 10px; }
-        #review_pages_icons .review_pages li a { color:#333 }
-
-        
-
-
-        #section2 #section_anchor4 { width: 100%; height: 35px; border-bottom: 1px solid #555;
-                                   text-align: center; margin-top: 100px; }
-        #section_anchor4 .product_detail5 { position: relative; }
-        #section_anchor4 .product_detail5 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
-                                                 }
-
-        #section_anchor4 .product_detail5 .click_on5 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
-                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
-                                                       font-size: 15px; padding-top: 8px;  }
-        
-        #section_anchor4 .product_detail5 .click_on5 > a { color:#444; font-size: 12px;  }
-        
-        #section_anchor4 .product_detail5 > .click_none6 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
-                                                               font-size: 15px; font-size: 12px; padding-top: 8px; }
-        #section_anchor4 .product_detail5 > .click_none7 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
-                                                               background-color: rgba(233, 233, 233, 0.75); color:#444;
-                                                               font-size: 15px; font-size: 12px; padding-top: 8px;}
-        #section_anchor4 .product_detail5 > .click_none6 > a:hover { background: rgb( 213, 213, 213 ); }
-        #section_anchor4 .product_detail5 > .click_none7 > a:hover { background: rgb( 213, 213, 213 ); } 
-
-
-       #section2 .inquiry_table1 { width: 100%; height: 300px; border-bottom: 1px solid lightgray; border-collapse: collapse; font-family: 'Hahmlet-Regular'; } 
-       #section2 .inquiry_table1 .inquiry_board { border-bottom: 1px solid lightgray; background:rgba(193, 170, 196, 0.2); }
-       #section2 .inquiry_table1 .border-bottomline { border-bottom: 1px solid lightgray;}                                                               
-
-        #section2 #inquiry_pages_icons { width: 100%; height: 40px; text-align: center; margin-left: 525px; margin-top: 100px; }
-        #inquiry_pages_icons .inquiry_pages > li { float: left; padding : 0px 20px 0 10px; }
-        #inquiry_pages_icons .inquiry_pages li a { color:#333; }
-        
-        #section2 .footer_line { width: 100%; height: 50px; border-bottom: 1px solid #333; 
-                                 }
-
-
-    </style>
 </head>
 <body>
     <nav id="nav1">
@@ -412,9 +134,9 @@
             </colgroup>
             <td>뉴욕식 소세지빵(4개입)</td>
             <td>
-                <img src="img/sub/plus_icon.png" class="plus" alt="더하기 아이콘">
-                <input type="text" id="quantity" name="quantity_option" value="1" min="1" size="1"  maxlength="3" pattern="^[0-9]+$">       
-                <img src="img/sub/minus_icon.png" class="minus" alt="빼기 아이콘">
+                <img src="img/sub/plus_icon.png" class="plus" id="increase" value="1" alt="더하기 아이콘" onclick="inc(this)">
+                <input type="text" id="quantity" name="quantity_option" value="1" min="1" size="1"  maxlength="3" pattern="^[0-9]+$" >       
+                <img src="img/sub/minus_icon.png" class="minus" id="decrease" value="-1" alt="빼기 아이콘" onclick="dec(this)">
             </td>
             <td>16000원</td>
 
@@ -467,7 +189,7 @@
             <li class="click_none1"><a href="#pr_purchase">상품구매안내</a></li>
             <li class="click_none1"><a href="#pr_other">관련상품</a></li>
             <li class="click_none1"><a href="#pr_review">상품후기</a></li>
-            <li class="click_none1"><a href="#pr_Inquiry">상품문의</a></li>
+            <li class="click_none1"><a href="#pr_inquiry">상품문의</a></li>
         </ul>
         </div>
     </div>
@@ -481,7 +203,7 @@
                     <li class="click_on2"><a href="#pr_purchase">상품구매안내</a></li>
                     <li class="click_none2"><a href="#pr_other">관련상품</a></li>
                     <li class="click_none2"><a href="#pr_review">상품후기</a></li>
-                    <li class="click_none2"><a href="#pr_Inquiry">상품문의</a></li>
+                    <li class="click_none2"><a href="#pr_inquiry">상품문의</a></li>
                 </ul>
             </div>
             <div class="section2_text1">
@@ -549,7 +271,7 @@
                     <li class="click_none4"><a href="#pr_purchase">상품구매안내</a></li>
                     <li class="click_on3"><a href="#pr_other">관련상품</a></li>
                     <li class="click_none4"><a href="#pr_review">상품후기</a></li>
-                    <li class="click_none4"><a href="#pr_Inquiry">상품문의</a></li>
+                    <li class="click_none4"><a href="#pr_inquiry">상품문의</a></li>
                 </ul>
             </div>
             <div id="bread_img_bigbox">
@@ -580,7 +302,7 @@
                     <li class="click_none5"><a href="#pr_purchase">상품구매안내</a></li>
                     <li class="click_none5"><a href="#pr_other">관련상품</a></li>
                     <li class="click_on4"><a href="#pr_review">상품후기</a></li>
-                    <li class="click_none5"><a href="#pr_Inquiry">상품문의</a></li>
+                    <li class="click_none5"><a href="#pr_inquiry">상품문의</a></li>
                 </ul>
             </div>
             <table class="section_table1">
@@ -714,7 +436,7 @@
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
-                    <li id="pr_inquiry"><a href="#">5</a></li>
+                    <li><a href="#">5</a></li>
                     <li><a href="#"><img src="img/sub/page_right_one_icon.jpg" alt="오른쪽 아이콘1"></a></li>
                     <li><a href="#"><img src="img/sub/page_right_two_icon.jpg" alt="오른쪽 아이콘2"></a></li>
                 </ol>
@@ -726,7 +448,7 @@
                     <li class="click_none6"><a href="#pr_purchase">상품구매안내</a></li>
                     <li class="click_none6"><a href="#pr_other">관련상품</a></li>
                     <li class="click_none6"><a href="#pr_review">상품후기</a></li>
-                    <li class="click_on5"><a href="#pr_Inquiry">상품문의</a></li>
+                    <li class="click_on5"><a href="#pr_inquiry">상품문의</a></li>
                 </ul>
             </div>
             <table class="inquiry_table1">
@@ -739,7 +461,7 @@
                     <col style="width: 20%;">
                 </colgroup>
                 <tr class="inquiry_board">
-                    <td>번호</td>
+                    <td id="pr_inquiry">번호</td>
                     <td>카테고리</td>
                     <td>제목</td>
                     <td>작성자</td>
