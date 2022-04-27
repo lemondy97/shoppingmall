@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>주문 & 결재</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/common.css">
         
@@ -25,6 +25,12 @@
         @font-face {
         font-family: 'paybooc-Medium';
         src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Medium.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+                            }
+        @font-face {
+        font-family: 'KOHINanumOTFL';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/KOHINanumOTFL.woff') format('woff');
         font-weight: normal;
         font-style: normal;
                             }
@@ -120,7 +126,7 @@
                        
         section { width: 1500px; height: 2300px; margin: 0 auto; }
         section .product_detail_image { display: block; margin-left: 200px; }
-        #section2 { width: 1500px; height: 3500px; margin: 0 auto; }
+        #section2 { width: 1500px; height: 3725px; margin: 0 auto; }
 
         #section2 #section_anchor1 { width: 100%; height: 35px; border-bottom: 1px solid #555;
                                    text-align: center; }
@@ -184,7 +190,7 @@
 
 
         #section2 #section_anchor3 { width: 100%; height: 35px; border-bottom: 1px solid #555;
-                                   text-align: center; margin-top: 100px; }
+                                   text-align: center; margin-top: 100px; margin-bottom: 20px; }
         #section_anchor3 .product_detail4 { position: relative; }
         #section_anchor3 .product_detail4 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
                                                  }
@@ -201,37 +207,91 @@
         #section_anchor3 .product_detail4 > .click_none6 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
                                                                background-color: rgba(233, 233, 233, 0.75); color:#444;
                                                                font-size: 15px; font-size: 12px; padding-top: 8px;}
+        #section_anchor3 .product_detail4 > .click_none5 > a:hover { background: rgb( 213, 213, 213 ); }
+        #section_anchor3 .product_detail4 > .click_none6 > a:hover { background: rgb( 213, 213, 213 ); } 
 
-        #section2 .section_table1 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; background: rgba(193, 170, 196, 0.2); }
-        #section2 .section_table2 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; }  
-        #section2 .section_table3 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; border-top: 1px solid lightgray; }
-        #section2 .section_table4 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; }
-        #section2 .section_table5 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; }
-        #section2 .section_table6 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; }                                                     
+
+        #section2 .section_table1 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'Hahmlet-Regular';
+                                    background: rgba(193, 170, 196, 0.2); border-top: 1px solid lightgray;  }
+        #section2 .section_table2 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }  
+        #section2 .section_table3 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; border-top: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }
+        #section2 .section_table4 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }
+        #section2 .section_table5 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }
+        #section2 .section_table6 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; font-family: 'KOHINanumOTFL'; }                                                     
         #section2 .bread_review_space1 { width: 100%; height: 550px; padding-left: 20px;  }
+        #section2 .bread_review_space1 p { font-family: 'KOHINanumOTFL'; }
         #section2 .bread_review_space1 button { margin-top: 10px;  }
 
         #section2 .bread_review_image1 { display:block; }
         #section2 .bread_review_space1 .post_button1 { width: 90px; height: 25px; margin-right: 50px;
-                                                       background: #fff; border: 1px solid lightgray;  }
+                                                       background: #fff; border: 1px solid lightgray;  } 
         #section2 .bread_review_space1 .post_button1:hover { background: rgba(215, 215, 215, 0.5); }
         #section2 .bread_review_space2 { width: 100%; height: 65px;  border-bottom: 1px solid lightgray; padding-left: 20px; }
+        #section2 .bread_review_space2 p { font-family: 'KOHINanumOTFL'; }
         #section2 .bread_review_space2 .post_button2 { width: 90px; height: 25px; margin-right: 50px;
                                                        background: #fff; border: 1px solid lightgray;  }
         #section2 .bread_review_space2 .post_button2:hover { background: rgba(215, 215, 215, 0.5); }
         #section2 .bread_review_space3 { width: 100%; height: 65px; border-bottom: 1px solid lightgray; padding-left: 20px; }
+        #section2 .bread_review_space3 p { font-family: 'KOHINanumOTFL'; }
         #section2 .bread_review_space3 .post_button3 { width: 90px; height: 25px; margin-right: 50px;
                                                        background: #fff; border: 1px solid lightgray;  }
         #section2 .bread_review_space3 .post_button4:hover { background: rgba(215, 215, 215, 0.5); }
         #section2 .bread_review_space4 { width: 100%; height: 65px; border-bottom: 1px solid lightgray; padding-left: 20px; }
+        #section2 .bread_review_space4 p { font-family: 'KOHINanumOTFL'; }
         #section2 .bread_review_space4 .post_button4 { width: 90px; height: 25px; margin-right: 50px;
                                                        background: #fff; border: 1px solid lightgray;  }
         #section2 .bread_review_space4 .post_button5:hover { background: rgba(215, 215, 215, 0.5); }
         #section2 .bread_review_space5 { width: 100%; height: 65px;  border-bottom: 1px solid lightgray; padding-left: 20px; }
+        #section2 .bread_review_space5 p { font-family: 'KOHINanumOTFL'; }
         #section2 .bread_review_space5 .post_button5 { width: 90px; height: 25px; margin-right: 50px;
                                                        background: #fff; border: 1px solid lightgray;  }
         #section2 .bread_review_space5 .post_button5:hover { background: rgba(215, 215, 215, 0.5); }
-        #section2 .pr_review_buttons { width: 100%; height: 50px; float: right; }
+        #section2 .pr_review_buttons { width: 100%; height: 100px;  }
+        #section2 .review_button2 { width: 90px; height: 30px; background: linear-gradient(to bottom,#142424 100%,#152324 100%); color:#fff;
+                                    box-shadow: 0 2px 2px rgb(0 0 0 / 4%); border-style:none; float: right; }
+        #section2 .review_button2:hover { background: linear-gradient(to bottom,#213d3d 100%,#254647 100%); }
+        #section2 .review_button1 { width: 60px; height: 30px; background: linear-gradient(to bottom,#eae6ee 40%,#dedbe6 100%); color:#333;
+                                    border-style: none; box-shadow: 0 2px 2px rgb(0 0 0 / 4%);  float: right; }
+        #section2 .review_button1:hover { background: linear-gradient(to bottom,#d6d0db 40%,#d2cfdb 100%); }
+        #section2 #review_pages_icons { width: 100%; height: 40px; text-align: center; margin-left: 525px; }
+        #review_pages_icons .review_pages > li { float: left; padding : 0px 20px 0 10px; }
+        #review_pages_icons .review_pages li a { color:#333 }
+
+        
+
+
+        #section2 #section_anchor4 { width: 100%; height: 35px; border-bottom: 1px solid #555;
+                                   text-align: center; margin-top: 100px; }
+        #section_anchor4 .product_detail5 { position: relative; }
+        #section_anchor4 .product_detail5 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
+                                                 }
+
+        #section_anchor4 .product_detail5 .click_on5 { display: inline-block; border: 1px solid #555; min-width: 125px; height: 35px;
+                                                       background: #fff; border-bottom: none; position: relative; z-index: 5; color:#444; 
+                                                       font-size: 15px; padding-top: 8px;  }
+        
+        #section_anchor4 .product_detail5 .click_on5 > a { color:#444; font-size: 12px;  }
+        
+        #section_anchor4 .product_detail5 > .click_none6 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
+                                                               background-color: rgba(233, 233, 233, 0.75); border-left: none; color:#444;
+                                                               font-size: 15px; font-size: 12px; padding-top: 8px; }
+        #section_anchor4 .product_detail5 > .click_none7 > a { display: block; border: 1px solid #989898; min-width: 125px; height: 35px;
+                                                               background-color: rgba(233, 233, 233, 0.75); color:#444;
+                                                               font-size: 15px; font-size: 12px; padding-top: 8px;}
+        #section_anchor4 .product_detail5 > .click_none6 > a:hover { background: rgb( 213, 213, 213 ); }
+        #section_anchor4 .product_detail5 > .click_none7 > a:hover { background: rgb( 213, 213, 213 ); } 
+
+
+       #section2 .inquiry_table1 { width: 100%; height: 300px; border-bottom: 1px solid lightgray; border-collapse: collapse; font-family: 'Hahmlet-Regular'; } 
+       #section2 .inquiry_table1 .inquiry_board { border-bottom: 1px solid lightgray; background:rgba(193, 170, 196, 0.2); }
+       #section2 .inquiry_table1 .border-bottomline { border-bottom: 1px solid lightgray;}                                                               
+
+        #section2 #inquiry_pages_icons { width: 100%; height: 40px; text-align: center; margin-left: 525px; margin-top: 100px; }
+        #inquiry_pages_icons .inquiry_pages > li { float: left; padding : 0px 20px 0 10px; }
+        #inquiry_pages_icons .inquiry_pages li a { color:#333; }
+        
+        #section2 .footer_line { width: 100%; height: 50px; border-bottom: 1px solid #333; 
+                                 }
 
 
     </style>
@@ -639,11 +699,122 @@
             <div class="bread_review_space5">
                 <p>사먹을게 못됨, 먹지마시길.</p>
                 <button class="post_button5">게시글 수정</button>
-            </div class="pr_review_buttons">
-            <div>
-            <button>후기작성하기</button>
-            <button>모두보기</button>
             </div>
+            <div class="pr_review_buttons">
+            <button class="review_button1">모두보기</button>
+            <button class="review_button2">후기작성하기</button>
+            </div>
+            <div id="review_pages_icons">
+                
+                
+                <ol class="review_pages">
+                    <li><a href="#"><img src="img/sub/page_left_two_icon.jpg" alt="왼쪽 아이콘1"></a></li>
+                    <li><a href="#"><img src="img/sub/page_left_one_icon.jpg" alt="왼쪽 아이콘2"></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li id="pr_inquiry"><a href="#">5</a></li>
+                    <li><a href="#"><img src="img/sub/page_right_one_icon.jpg" alt="오른쪽 아이콘1"></a></li>
+                    <li><a href="#"><img src="img/sub/page_right_two_icon.jpg" alt="오른쪽 아이콘2"></a></li>
+                </ol>
+
+            </div>
+            <div id="section_anchor4">
+                <ul class="product_detail5">
+                    <li class="click_none7"><a href="#pr_detail">상품상세정보</a></li>
+                    <li class="click_none6"><a href="#pr_purchase">상품구매안내</a></li>
+                    <li class="click_none6"><a href="#pr_other">관련상품</a></li>
+                    <li class="click_none6"><a href="#pr_review">상품후기</a></li>
+                    <li class="click_on5"><a href="#pr_Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+            <table class="inquiry_table1">
+                <colgroup>
+                    <col style="width: 10%;">
+                    <col style="width: 35%;">
+                    <col style="width: 25%;">
+                    <col style="width: 10%;">
+                    <col style="width: 10%;">
+                    <col style="width: 20%;">
+                </colgroup>
+                <tr class="inquiry_board">
+                    <td>번호</td>
+                    <td>카테고리</td>
+                    <td>제목</td>
+                    <td>작성자</td>
+                    <td>작성일</td>
+                    <td>조회</td>
+                </tr>
+                
+            
+            
+                <tr class="border-bottomline">
+                    <td >15</td>
+                    <td>입금자명 확인</td>
+                    <td></td>
+                    <td>이**</td>
+                    <td>2022-04-22</td>
+                    <td>16</td>
+                </tr>
+                
+
+                <tr class="border-bottomline">
+                    <td>14</td>
+                    <td>입금자명 확인</td>
+                    <td></td>
+                    <td>김**</td>
+                    <td>2022-04-20</td>
+                    <td>50</td>
+                </tr>
+                
+
+                <tr class="border-bottomline">
+                    <td>13</td>
+                    <td>입금자명 확인</td>
+                    <td></td>
+                    <td>정**</td>
+                    <td>2022-04-17</td>
+                    <td>18</td>
+                </tr>
+                
+
+                <tr class="border-bottomline">
+                    <td>12</td>
+                    <td>입금자명 확인</td>
+                    <td></td>
+                    <td>강**</td>
+                    <td>2022-04-17</td>
+                    <td>22</td>
+                </tr>
+                
+            
+
+                <tr class="border-bottomline">
+                    <td>11</td>
+                    <td>입금자명 확인</td>
+                    <td></td>
+                    <td>박**</td>
+                    <td>2022-04-16</td>
+                    <td>35</td>
+                </tr>
+            </table>
+            
+            <div id="inquiry_pages_icons">
+                
+                
+                <ol class="inquiry_pages">
+                    <li><a href="#"><img src="img/sub/page_left_two_icon.jpg" alt="왼쪽 아이콘1"></a></li>
+                    <li><a href="#"><img src="img/sub/page_left_one_icon.jpg" alt="왼쪽 아이콘2"></a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><img src="img/sub/page_right_one_icon.jpg" alt="오른쪽 아이콘1"></a></li>
+                    <li><a href="#"><img src="img/sub/page_right_two_icon.jpg" alt="오른쪽 아이콘2"></a></li>
+                </ol>
+
+            </div>
+            <div class="footer_line"></div>
         </div>
 
 
