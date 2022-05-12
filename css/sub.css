@@ -89,8 +89,8 @@
         #slider2 .social_media { margin-left: -850px; }
         #slider2 .social_media  > li { float: left; padding: 10px 0px 0 20px; }
 
-        #slider2 #slider_anchor1 { width: 100%; height: 35px; border-bottom: 1px solid #555;
-                                   text-align: center; }
+        #slider2 #slider_anchor1 { width: 80%; height: 35px; border-bottom: 1px solid #555;
+                                   text-align: center; margin-left: 150px; }
         #slider_anchor1 .product_detail1 { position: relative; }
         #slider_anchor1 .product_detail1 li { display: inline-block; margin: 0px 0 0 -6px; vertical-align: middle; font-family: 'paybooc-Medium'; 
                                               }
@@ -118,9 +118,9 @@
 
                        
                        
-        section { width: 1500px; height: 2300px; margin: 0 auto; }
-        section .product_detail_image { display: block; margin-left: 200px; }
-        #section2 { width: 1500px; height: 3725px; margin: 0 auto; }
+        section { width: 1200px; height: 2300px; margin: 0 auto; }
+        section .product_detail_image { display: block; margin-left: 50px; }
+        #section2 { width: 1200px; height: 3725px; margin: 0 auto; }
 
         #section2 #section_anchor1 { width: 100%; height: 35px; border-bottom: 1px solid #555;
                                    text-align: center; }
@@ -144,13 +144,13 @@
         #section_anchor1 .product_detail2 > .click_none3 > a:hover { background: rgb( 213, 213, 213 ); }   
 
         #section2 .section2_text1 { width: 100%; height: 50px; border-bottom: 1px solid lightgray; 
-                                    color: #333; font-size: 13px; padding: 0 0px 70px 12px; }
-        #section2 .section2_text2 { width: 100%; height: 180px; border-bottom: 1px solid lightgray; 
-                                    color: rgb(130, 130, 130); font-size: 13px; }
+                                    color: #333; font-size: 13px; padding: 0 0px 70px 12px; text-align: center; }
+        #section2 .section2_text2 { width: 100%; height: 200px; border-bottom: 1px solid lightgray; 
+                                    color: rgb(130, 130, 130); font-size: 13px; text-align: center; }
         #section2 .section2_text3 { width: 100%; height: 250px; border-bottom: 1px solid lightgray; 
-                                    color: rgb(130, 130, 130); font-size: 13px; }
-        #section2 .section2_text4 { width: 100%; height: 600px; border-bottom: 1px solid lightgray; 
-                                    color: rgb(130, 130, 130); font-size: 13px; }
+                                    color: rgb(130, 130, 130); font-size: 13px; text-align: center; }
+        #section2 .section2_text4 { width: 100%; height: 550px; border-bottom: 1px solid lightgray; 
+                                    color: rgb(130, 130, 130); font-size: 13px; text-align: center; }
         
 
 

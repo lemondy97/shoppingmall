@@ -20,7 +20,7 @@
         font-style: normal;
         }
 
-
+        #wrap { width: 1500px; height: auto; margin: 0 auto; }
         #nav1 a:visited { color:#fff }
         #nav2 a:visited { color:#333 }
         #nav3 a:visited { color:#333 }
