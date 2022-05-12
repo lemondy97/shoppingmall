@@ -23,31 +23,10 @@
                 $()
             }
         </script> -->
-    <script>
-        $(function(){ 
-            $(".small_bread img:nth-of-type(1)").hover(function(){
-            $("#product1").fadeIn();
-            $("#product2").hide();
-            $("#product3").hide();
-        });
 
-        $(".small_bread img:nth-of-type(2)").hover(function(){
-            $("#product2").fadeIn();
-            $("#product1").hide();
-            $("#product3").hide();
-        });
-
-        $(".small_bread img:nth-of-type(3)").hover(function(){
-            $("#product3").fadeIn();
-            $("#product1").hide();
-            $("#product2").hide();
-
-        });
-    });
        
-         
+        <script src="js/fade.js"></script>  
         
-    </script>
 
 </head>
 <body>
@@ -66,22 +45,22 @@
 
         <nav id="nav2">
             <ul id="menu">
-                <li><a href="#">상품 카테고리</a>
+                <li><a href="https://lemondy97.github.io/shoppingmall/">상품 카테고리</a>
                     <ul class="kategory"> 
-                        <li><a href="#">빵</a></li>
-                        <li><a href="#">케이크</a></li>
-                        <li><a href="#">샌드위치</a></li>
-                        <li><a href="#">도넛</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">빵</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">케이크</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">샌드위치</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">도넛</a></li>
                     </ul>
                     </li>
-                <li><a href="#">My Shopping</a>
+                <li><a href="https://lemondy97.github.io/shoppingmall/">My Shopping</a>
                     <ul class="kategory2">
-                        <li><a href="#">주문/배송조회</a></li>
-                        <li><a href="#">나의 게시물</a></li>
-                        <li><a href="#">정기배송관리</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">주문/배송조회</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">나의 게시물</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">정기배송관리</a></li>
                     </ul>
                 </li>
-                <li><a href="#">예약/픽업</a></li>
+                <li><a href="https://lemondy97.github.io/shoppingmall/">예약/픽업</a></li>
             </ul>
         </nav>
         <div id="logo">
@@ -89,13 +68,13 @@
         </div>
         <nav id="nav3">
             <ul id="menu3">
-                <li><a href="#">정기구독</a></li>
-                <li><a href="#">장바구니</a></li>
-                <li><a href="#">고객지원</a>
+                <li><a href="https://lemondy97.github.io/shoppingmall/">정기구독</a></li>
+                <li><a href="https://lemondy97.github.io/shoppingmall/">장바구니</a></li>
+                <li><a href="https://lemondy97.github.io/shoppingmall/">고객지원</a>
                     <ul class="kategory3">
-                        <li><a href="#">공지사항</a></li>
-                        <li><a href="#">이용안내</a></li>
-                        <li><a href="#">상품 Q&A</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">공지사항</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">이용안내</a></li>
+                        <li><a href="https://lemondy97.github.io/shoppingmall/">상품 Q&A</a></li>
                     </ul>
                 </li>
                     
@@ -112,86 +91,78 @@
         
         <table class="table1">
             <tbody>
-
-            <colgroup>
-                <col style= "width: 25%;">
-                <col style= "width: 75%;">
-            </colgroup>
-           
                 <tr>
-                    <td><span class="best_bread">Best Bread</span></td>
-                    <td style="width: 300px; font-weight: 600; font-size: 25px; font-family: InfinitySans-BoldA1;"> 뉴욕식 소세지빵 4개입(정기배송)</td>
+                    <td class="table1_td1"><span class="best_bread">Best Bread</span></td>
+                    <td style="width: 300px; font-weight: 600; font-size: 25px; font-family: InfinitySans-BoldA1;" class="table1_td2"> 뉴욕식 소세지빵 4개입(정기배송)</td>
                 </tr>
 
                 <tr>
-                    <td> 〉 판매가</td>
-                    <td><strong>16000원</strong></td>
+                    <td class="table1_td1"> 〉 판매가</td>
+                    <td class="table1_td2"><strong>16000원</strong></td>
                 </tr>
             
                 <tr>
-                    <td> 〉 국내 · 해외 배송</td>
-                    <td>국내배송</td>
+                    <td class="table1_td1"> 〉 국내 · 해외 배송</td>
+                    <td class="table1_td2">국내배송</td>
                 </tr>
 
                 <tr>
-                    <td> 〉 배송방법</td>
-                    <td>택배</col>
+                    <td class="table1_td1"> 〉 배송방법</td>
+                    <td class="table1_td2">택배</td>
                 </tr>
                 
                 <tr>
-                    <td> 〉 배송비</td>
-                    <td>배송비 무료</td>
+                    <td class="table1_td1"> 〉 배송비</td>
+                    <td class="table1_td2">배송비 무료</td>
                 </tr>
     
             
         </table>
 
-        <tbody>
+        
 
         <table class="table2">
-            <td>상품명</td>
-            <td>상품수</td>
-            <td>가격</td>
-
+            <tr>
+                <td class="table2_td1">상품명</td>
+                <td class="table2_td2">상품수</td>
+                <td class="table2_td3">가격</td>
+            </tr>
         </table>
 
         
         <table class="table3">
-            <colgroup>
-                <col style="width:40%;">
-                <col style="width:35%;">
-                <col style="width:25%;">
-            </colgroup>
-            <td>뉴욕식 소세지빵(4개입)</td>
-            <td>
-                
-                <img src="img/sub/plus_icon.png" class="plus" id="increase" value="result1" alt="더하기 아이콘" onclick="">
-                <input type="text" id="quantity" name="quantity_option" value="1" min="1" size="1"  maxlength="3" pattern="^[0-9]+$" >       
-                <img src="img/sub/minus_icon.png" class="minus" id="decrease" value="result2" alt="빼기 아이콘" onclick="dec(this)">
-            </td>
-            <td>16000원</td>
+            <tr>
+                <td class="table3_td1">뉴욕식 소세지빵(4개입)</td>
+                <td class="table3_td2">
+
+                    <img src="img/sub/plus_icon.png" class="plus" alt="더하기 아이콘" onclick="">
+                    <input type="text" id="quantity" name="quantity_option" size="1"  maxlength="3" pattern="^[0-9]+$" >       
+                    <img src="img/sub/minus_icon.png" class="minus" alt="빼기 아이콘" onclick="">
+                </td>
+                <td class="table3_td3">16000원</td>
+            </tr>
 
         </table>
 
         <div class="buttons">
-            <a href="#"><button type="button" class="button1">바로구매하기</button></a>
-            <a href="#"><button type="button" class="button2">장바구니</button></a>
-            <a href="#"><button type="button" class="button3">관심상품</button></a><br>&emsp;&ensp;
+            <button type="button" class="button1">바로구매하기</button>
+            <button type="button" class="button2">장바구니</button>
+            <button type="button" class="button3">관심상품</button><br>&emsp;&ensp;
             <span><b>총 상품금액</b>(수량):<strong>16000원</strong>(1개)</span>
         </div>
         
     
         </div>
         
-</div>
+
     <div id="slider2">
         <div class="line"></div>
         <div class="small_bread">
-            <img src="img/sub/small_sausage_bread_sub.png"><img src="img/sub/small_sausage_bread2_sub.jpg"><img src="img/sub/small_sausage_bread3_sub.jpg">
+            <img src="img/sub/small_sausage_bread_sub.png" alt="이미지 바꾸기"><img src="img/sub/small_sausage_bread2_sub.jpg" alt="이미지 바꾸기"><img src="img/sub/small_sausage_bread3_sub.jpg" alt="이미지 바꾸기">
         </div>
         <div class="payment">
-            <div class="pay_img"><img src="img/sub/pay_icon.png"></div>
-            <div class="pay_button"><img src="img/sub/Irinapay_button.jpg"></div>
+            <div class="pay_img"><img src="img/sub/pay_icon.png" alt="결재 아이콘"></div>
+            <div class="pay_button"><img src="img/sub/Irinapay_button.jpg" alt="이리나 페이 아이콘"></div>
             <button type="button" class="wish_list">찜</button>
             <ul class="social_media">
                 <li><a href="#"><img src="img/sub/facebook_icon_sub.png" alt="페이스북 아이콘"></a></li>
@@ -212,7 +183,7 @@
         </div>
     </div>
     <section>
-        <img src="img/sub/Product_details_page.jpg" class="product_detail_image" id="pr_detail">
+        <img src="img/sub/Product_details_page.jpg" alt="상품 품질설명" class="product_detail_image" id="pr_detail">
     </section>
         <div id="section2"> 
             <div id="section_anchor1">
@@ -276,7 +247,7 @@
                     &emsp;- 복제가 가능한 상품등의 포장을 훼손한 경우<br>
                     &emsp;(자세한 내용은 고객만족센터 1:1 E-MAIL상담을 이용해 주시기 바랍니다.)
                 </p><br><br><br><br>
-                <p>
+                <p id="pr_other">
                     &emsp;※ 고객님의 마음이 바뀌어 교환, 반품을 하실 경우 상품반송 비용은 고객님께서 부담하셔야 합니다.<br>
                     &emsp;(색상 교환, 사이즈 교환 등 포함)
                 </p><br><br>
@@ -295,7 +266,7 @@
             <div id="bread_img_bigbox">
                 <div class="bread_img_smallbox">
                     <a href="#"><img src="img/sub/baguette.jpg" alt="바게트" class="section_bread_img"></a>
-                    <h4 class="text_box_margin" id="pr_review">프렌치바게트(3개)</h4>
+                    <h4 class="text_box_margin" >프렌치바게트(3개)</h4>
                     <p>7500원</p>
                 </div>
                 <div class="bread_img_smallbox">
@@ -324,117 +295,81 @@
                 </ul>
             </div>
             <table class="section_table1">
-                <colgroup>
-                    <col style="width: 25%;">
-                    <col style="width: 35%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                </colgroup>
-                <td>번호</td>
-                <td>제목</td>
-                <td>작성자</td>
-                <td>작성일</td>
-                <td>조회</td>
-                <td>평점</td>
+                <tr>
+                    <td class="review_td1">번호</td>
+                    <td class="review_td2">제목</td>
+                    <td class="review_td3">작성자</td>
+                    <td class="review_td4">작성일</td>
+                    <td class="review_td5">조회</td>
+                    <td class="review_td6">평점</td>
+                </tr>
             </table>
             <table class="section_table2">
-                <colgroup>
-                    <col style="width: 25%;">
-                    <col style="width: 35%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                </colgroup>
-                <td>105</td>
-                <td>가격대비 양이 정말 많아요, 다음에 또 시켜야겠어요.</td>
-                <td>Bar*******</td>
-                <td>2022-04-14</td>
-                <td>1037</td>
-                <td><img src="img/sub/star_rating.png" alt="별점"></td>
+                <tr>
+                    <td class="review_td1">105</td>
+                    <td class="review_td2">가격대비 양이 정말 많아요, 다음에 또 시켜야겠어요.</td>
+                    <td class="review_td3">Bar*******</td>
+                    <td class="review_td4">2022-04-14</td>
+                    <td class="review_td5">1037</td>
+                    <td class="review_td6"><img src="img/sub/star_rating.png" alt="별점" id="pr_review"></td>
+                </tr>
             </table>
             <div class="bread_review_space1">
                 <p>가성비가 매우 좋아요. 무조건 사세요.</p><br>
-                <img src="img/sub/bread_review1.jpg" class="bread_review_image1">
+                <img src="img/sub/bread_review1.jpg" class="bread_review_image1" alt="상품 리뷰">
                 <button class="post_button1">게시글 수정</button>
             </div>
             <table class="section_table3">
-                <colgroup>
-                    <col style="width: 25%;">
-                    <col style="width: 35%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                </colgroup>
-                <td>211</td>
-                <td>오 정말 생각외네요</td>
-                <td>pik***</td>
-                <td>2022-04-15</td>
-                <td>638</td>
-                <td><img src="img/sub/star_rating.png" alt="별점"></td>
+                <tr>
+                    <td class="review_td1">211</td>
+                    <td class="review_td2">오 정말 생각외네요</td>
+                    <td class="review_td3">pik***</td>
+                    <td class="review_td4">2022-04-15</td>
+                    <td class="review_td5">638</td>
+                    <td class="review_td6"><img src="img/sub/star_rating.png" alt="별점"></td>
+                </tr>
             </table>
             <div class="bread_review_space2">
                 <p>좀 비싸다고 생각해서 혹시 돈만 버리는거 아닌가 생각했는데 먹고 보니 생각이 바뀌었어요.</p>
                 <button class="post_button2">게시글 수정</button>
             </div>
             <table class="section_table4">
-                <colgroup>
-                    <col style="width: 25%;">
-                    <col style="width: 35%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                </colgroup>
-                <td>397</td>
-                <td>최상급은 아니지만,</td>
-                <td>레**</td>
-                <td>2022-04-17</td>
-                <td>402</td>
-                <td><img src="img/sub/star_rating4.png" alt="별점"></td>
+                <tr>
+                    <td class="review_td1">397</td>
+                    <td class="review_td2">최상급은 아니지만,</td>
+                    <td class="review_td3">레**</td>
+                    <td class="review_td4">2022-04-17</td>
+                    <td class="review_td5">402</td>
+                    <td class="review_td6"><img src="img/sub/star_rating4.png" alt="별점"></td>
+                </tr>
             </table>
             <div class="bread_review_space3">
                 <p>뉴욕에서 사먹은 원조보다는 만큼은 아니지만 만족스럽습니다.</p>
                 <button class="post_button3">게시글 수정</button>
             </div>
             <table class="section_table5">
-                <colgroup>
-                    <col style="width: 25%;">
-                    <col style="width: 35%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                </colgroup>
-                <td>459</td>
-                <td>그냥그래요</td>
-                <td>대***</td>
-                <td>2022-04-19</td>
-                <td>518</td>
-                <td><img src="img/sub/star_rating2.png" alt="별점"></td>
+                <tr>
+                    <td class="review_td1">459</td>
+                    <td class="review_td2">그냥그래요</td>
+                    <td class="review_td3">대***</td>
+                    <td class="review_td4">2022-04-19</td>
+                    <td class="review_td5">518</td>
+                    <td class="review_td6"><img src="img/sub/star_rating2.png" alt="별점"></td>
+                </tr>
             </table>
             <div class="bread_review_space4">
                 <p>기대했는데 별로에요 평범합니다.</p>
                 <button class="post_button4">게시글 수정</button>
             </div>
             <table class="section_table6">
-                <colgroup>
-                    <col style="width: 25%;">
-                    <col style="width: 35%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                    <col style="width: 9%;">
-                    <col style="width: 11%;">
-                </colgroup>
-                <td>634</td>
-                <td>괜히샀다</td>
-                <td>아****</td>
-                <td>2022-04-21</td>
-                <td>783</td>
-                <td><img src="img/sub/star_rating3.png" alt="별점"></td>
+                <tr>
+                    <td class="review_td1">634</td>
+                    <td class="review_td2">괜히샀다</td>
+                    <td class="review_td3">아****</td>
+                    <td class="review_td4">2022-04-21</td>
+                    <td class="review_td5">783</td>
+                    <td class="review_td6"><img src="img/sub/star_rating3.png" alt="별점"></td>
+                </tr>
             </table>
             <div class="bread_review_space5">
                 <p>사먹을게 못됨, 먹지마시길.</p>
@@ -450,7 +385,7 @@
                 <ol class="review_pages">
                     <li><a href="#"><img src="img/sub/page_left_two_icon.jpg" alt="왼쪽 아이콘1"></a></li>
                     <li><a href="#"><img src="img/sub/page_left_one_icon.jpg" alt="왼쪽 아이콘2"></a></li>
-                    <li><a href="#">1</a></li>
+                    <li id="pr_inquiry"><a href="#">1</a></li>
                     <li><a href="#">2</a></li>
                     <li><a href="#">3</a></li>
                     <li><a href="#">4</a></li>
@@ -470,73 +405,65 @@
                 </ul>
             </div>
             <table class="inquiry_table1">
-                <colgroup>
-                    <col style="width: 10%;">
-                    <col style="width: 35%;">
-                    <col style="width: 25%;">
-                    <col style="width: 10%;">
-                    <col style="width: 10%;">
-                    <col style="width: 20%;">
-                </colgroup>
                 <tr class="inquiry_board">
-                    <td id="pr_inquiry">번호</td>
-                    <td>카테고리</td>
-                    <td>제목</td>
-                    <td>작성자</td>
-                    <td>작성일</td>
-                    <td>조회</td>
+                    <td class="inquiry_td1">번호</td>
+                    <td class="inquiry_td2">카테고리</td>
+                    <td class="inquiry_td3">제목</td>
+                    <td class="inquiry_td4">작성자</td>
+                    <td class="inquiry_td5">작성일</td>
+                    <td class="inquiry_td6">조회</td>
                 </tr>
                 
             
             
                 <tr class="border-bottomline">
-                    <td >15</td>
-                    <td>입금자명 확인</td>
-                    <td></td>
-                    <td>이**</td>
-                    <td>2022-04-22</td>
-                    <td>16</td>
+                    <td class="inquiry_td1">15</td>
+                    <td class="inquiry_td2">입금자명 확인</td>
+                    <td class="inquiry_td3"></td>
+                    <td class="inquiry_td4">이**</td>
+                    <td class="inquiry_td5">2022-04-22</td>
+                    <td class="inquiry_td6">16</td>
                 </tr>
                 
 
                 <tr class="border-bottomline">
-                    <td>14</td>
-                    <td>입금자명 확인</td>
-                    <td></td>
-                    <td>김**</td>
-                    <td>2022-04-20</td>
-                    <td>50</td>
+                    <td class="inquiry_td1">14</td>
+                    <td class="inquiry_td2">입금자명 확인</td>
+                    <td class="inquiry_td3"></td>
+                    <td class="inquiry_td4">김**</td>
+                    <td class="inquiry_td5">2022-04-20</td>
+                    <td class="inquiry_td6">50</td>
                 </tr>
                 
 
                 <tr class="border-bottomline">
-                    <td>13</td>
-                    <td>입금자명 확인</td>
-                    <td></td>
-                    <td>정**</td>
-                    <td>2022-04-17</td>
-                    <td>18</td>
+                    <td class="inquiry_td1">13</td>
+                    <td class="inquiry_td2">입금자명 확인</td>
+                    <td class="inquiry_td3"></td>
+                    <td class="inquiry_td4">정**</td>
+                    <td class="inquiry_td5">2022-04-17</td>
+                    <td class="inquiry_td6">18</td>
                 </tr>
                 
 
                 <tr class="border-bottomline">
-                    <td>12</td>
-                    <td>입금자명 확인</td>
-                    <td></td>
-                    <td>강**</td>
-                    <td>2022-04-17</td>
-                    <td>22</td>
+                    <td class="inquiry_td1">12</td>
+                    <td class="inquiry_td2">입금자명 확인</td>
+                    <td class="inquiry_td3"></td>
+                    <td class="inquiry_td4">강**</td>
+                    <td class="inquiry_td5">2022-04-17</td>
+                    <td class="inquiry_td6">22</td>
                 </tr>
                 
             
 
                 <tr class="border-bottomline">
-                    <td>11</td>
-                    <td>입금자명 확인</td>
-                    <td></td>
-                    <td>박**</td>
-                    <td>2022-04-16</td>
-                    <td>35</td>
+                    <td class="inquiry_td1">11</td>
+                    <td class="inquiry_td2">입금자명 확인</td>
+                    <td class="inquiry_td3"></td>
+                    <td class="inquiry_td4">박**</td>
+                    <td class="inquiry_td5">2022-04-16</td>
+                    <td class="inquiry_td6">35</td>
                 </tr>
             </table>
             
