@@ -20,7 +20,7 @@
         font-style: normal;
         }
 
-        #wrap { width: 1500px; height: auto; margin: 0 auto; }
+
         #nav1 a:visited { color:#fff }
         #nav2 a:visited { color:#333 }
         #nav3 a:visited { color:#333 }
@@ -55,7 +55,7 @@
                             padding:15px; font-size:15px;}
 
         #nav2 #menu a:hover >.kategory2 { display:block; }
-        #nav2 #menu li .kategory2 { position : absolute; width: 120px; display: none; z-index: 5;}
+        #nav2 #menu li .kategory2 { position : absolute; width: 100px; display: none; z-index: 5;}
         #nav2 #menu li .kategory2 li { background: rgb(230, 230, 250); display:block;
                                        text-align: center; }
         #nav2 #menu li .kategory2 li a { display: block; }
